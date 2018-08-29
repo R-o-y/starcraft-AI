@@ -7,7 +7,7 @@ class SentdeBot(sc2.BotAI):
         await self.distribute_workers()
 
 
-run_game(maps.get('Simple64'), [
+run_game(maps.get('BuildMarines'), [
     Bot(Race.Protoss, SentdeBot()),
     Computer(Race.Terran, Difficulty.Easy)
-], realtime=True)
+], realtime=False)
